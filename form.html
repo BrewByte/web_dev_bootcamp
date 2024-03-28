@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Form Demo</h1>
+
+    <form>
+        <button type="button">submit</button>
+        <p>
+            <label for="username">username</label>
+            <input type="text" id="username" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">password</label>
+            <input type="password" id="password" placeholder="password" name="password">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="email" name="email">
+        </p>
+        <p>
+            <label for="number">phone number</label>
+            <input type="number" id="number" placeholder="phone number" name="number">
+        </p>
+        <button>submit</button>
+    </form>
+    <br>
+    <!-- hijacking searches -->
+    <h1>Hijacking Seaches</h1>
+    <form action="https://www.reddit.com/search/?">
+        <label for="reddit">Reddit</label>
+        <input type="text" placeholder="Search Reddit" name="q" id="reddit">
+    </form>
+    <br>
+    <form action="https://www.google.com/search?">
+        <label for="google">Google</label>
+        <input type="text" placeholder="Search google" name="q" id="google">
+    </form>
+    <br>
+    <form action="https://www.youtube.com/results?search_query">
+        <label for="youtube">Youtube</label>
+        <input type="text" placeholder="Search youtube" name="search_query" id="youtube">
+    </form>
+    <br>
+    <!-- form validation -->
+    <h1>Form Validation</h1>
+
+    <form action="/dummy">
+        <label for="first">Enter first name</label>
+        <input type="text" id="first" name="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" minlength="4" maxlength="15" required>
+        </p>
+        <button>submit</button>
+    </form>
+
+</body>
+
+</html>

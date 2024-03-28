@@ -1,0 +1,32 @@
+table {
+   border-collapse: collapse;
+   border: 2px solid rgb(35, 32, 32);
+   letter-spacing: 2px;
+}
+caption {
+   padding-bottom: 3px;
+   font-weight: bold;
+}
+th,
+td,
+tr {
+   padding: 5px;
+   border: 2px solid rgb(35, 32, 32);
+}
+
+td:first-of-type {
+   text-align: center;
+}
+
+td:last-of-type {
+   text-align: center;
+}
+
+tbody > tr:nth-of-type(even) {
+   background-color: rgb(237 238 242);
+}
+
+thead,
+tfoot {
+   background-color: rgb(228 240 245);
+}
